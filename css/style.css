@@ -169,33 +169,38 @@ form input::placeholder{
     position: absolute;
     z-index: -1;
     opacity: 0;
-    right: 1rem;
-    top: 50%;
-    margin-right: 0.2rem;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
     outline: none;
     border: none;
+    right: 0;
+    border-radius:5rem 5rem 0 0;
     background-color: #00c46a;
     color: #2d3439;
-    padding: 0 0.2vh;
 }
 
 .upArrow,.upArrow:focus{
-    padding: 0 .9vh;
+    top: 0;
     font-weight: bold;
+    background-color: #ffb545;
+    border-radius: 0 0 5rem 5rem;
 }
 
 .sBtn{
     text-align: center;
+    padding: 0;
+    margin-bottom: 0;
 }
 .sBtn button,.sBtn button:focus{
+    border-radius:0 0 .5rem  .5rem ;
     outline: none;
     border: none;
-    border-radius: .5rem ;
-    font-size: .5rem;
-    padding: .5vh 1vh;
-    color: white;
-    background-color: #00c46a;
-    width: 20%;
+    width: 100%;
+    margin:1vh 0 0 0;
+    font-size: .8rem;
+    color: #ececec;
+    background-color:#00c46a;
     z-index: -1;
     opacity: 0;
     position: absolute;
@@ -217,13 +222,21 @@ form input::placeholder{
         padding: 0;
         margin: 0;
         height: 100vh;
+    }
+    .formBox{
+        padding-bottom: 0;
+        height: 100vh;
     } 
 #mapBox{
-    height: 80vh;
+    height: 100vh;
 }
 
 .input{
     width: 50% !important;
+}
+
+.logo img{
+    width: 15rem;
 }
 
 .logo{
@@ -254,6 +267,9 @@ form,.output{
     z-index: 1000;
     position: relative;
 }
+form .row{
+    padding: .5rem 1rem 0rem ;
+}
 
 }
 
@@ -269,6 +285,14 @@ form,.output{
         margin: 0;
         height: 100vh;
     }
+
+    .logo img{
+        width: 12rem;
+    }
+    .formBox{
+        padding-bottom: 0;
+        height: 100vh;
+    }
     .col-lg-5{
         padding-right: 0;
     }
@@ -277,6 +301,10 @@ form,.output{
     }
     #mapBox{
         height: 80vh;
+    }
+
+    form .row{
+        padding: .5rem 1rem 0rem ;
     }
 
     
@@ -296,6 +324,7 @@ form,.output{
     position: relative;
 }
 
+
 }
 
 
@@ -312,9 +341,10 @@ form,.output{
     }    
     .formBox{
         padding-bottom: 0;
+        height: 100vh;
     }
     #mapBox{
-        height: 90vh;
+        height: 100vh;
     }
     
     /* .input{
@@ -323,6 +353,12 @@ form,.output{
      */
     .logo{
         text-align: left;
+        margin-left: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .logo img {
+        width: 11rem;
     }
 
     #outputHeading{
@@ -341,7 +377,7 @@ form,.output{
         padding-right: 0;
     }
     form,.output{
-        margin: 2vh 4vh 2vh 1vh;
+        margin: 2vh 4vh 2vh 3vh;
     }
     
     .copyRight{
@@ -351,7 +387,7 @@ form,.output{
     }
  
     form .row{
-        padding: .5rem 1rem ;
+        padding: .5rem 1rem 0rem ;
     }
     
     form label{

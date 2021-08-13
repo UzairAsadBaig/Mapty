@@ -58,8 +58,8 @@ class App {
         if (localStorage.getItem('workouts'))
             this._getFromLocalStorage();
 
-        this._movToWorkoutMarker();
         this._activeUpDown();
+        this._movToWorkoutMarker();
     }
 
 
@@ -178,18 +178,20 @@ class App {
                     "duration": 1,
                 }
             });
+            mapBox.scrollIntoView({ behavior: 'smooth' });
         }.bind(this))
     }
 
     _activeUpDown() {
         upArrow.addEventListener('click', function (e) {
             e.preventDefault();
+            this._hideForm();
             form.scrollIntoView({ behavior: 'smooth' });
-        })
+        }.bind(this));
         downArrow.addEventListener('click', function (e) {
             e.preventDefault();
             mapBox.scrollIntoView({ behavior: 'smooth' });
-        })
+        });
     }
 
 }
