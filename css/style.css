@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color: #ececec;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 4vh 7vh;
+    height: 90vh;
+    overflow-x: hidden;
+}
+.container-fluid{
+    padding: 0;
+}
+.col-lg-5{
+    padding: 0;
+}
+.col-lg-7{
+    padding: 0;
+    margin: 0;
+}
+.mainRow{
+    height: 90vh;
+}
+
+
+
+/*-------------- Form Box --------------*/
+.formBox{
+    background-color: #2d3439;
+    padding: 5vh 3vh;
+    height: 93vh;
+    margin-left: 0;
+}
+
+#formList{
+    overflow-y: scroll;
+    height: 65vh!important;
+}
+
+#formList::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 8rem;
+    margin-bottom: 3vh;
+}
+form{
+    margin: 2vh 3vh;
+     border-radius: 0.4rem;
+     background-color: #42484d;
+}
+form .row{
+    padding: 1rem 1.6rem .8rem 1.6rem;
+}
+
+form label{
+    font-size: .9rem;
+    font-weight: 700;
+}
+form .input,form .input:focus{
+    width: 5rem;
+    float: right;
+    border: none;
+    height: 1.5rem ;
+    border-radius: 0.2rem;
+    font-size: .9rem;
+    outline: none;
+}
+form input{
+    text-align: center;
+}
+form input::placeholder{
+    opacity: 60%;
+}
+.hidden{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+} 
+.copyRight{
+    /* position: absolute; */
+    /* bottom: 2rem; */
+    font-size: 0.9rem;
+}
+
+
+/*-------------- Pop Up --------------*/
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+    background-color:#2d3439;
+    color: #ececec;
+    border-radius: 0px 5px 5px 0px;
+    padding-right: 0.1rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+    font-size: .95rem;
+    width: 11.1rem!important;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+    background-color: #2d3439;
+}
+.popUpR{
+    border-left: 0.5rem solid #00c46a;
+    border-radius: 5px;
+    
+} 
+.popUpC{
+    border-left: 0.5rem solid #ffb545;
+    border-radius: 5px;
+} 
+
+
+/*-------------- Output --------------*/
+.output{
+    margin: 2vh 3vh;
+    padding: 1.2rem;
+    background-color: #42484d; 
+    border-radius: 0.3rem;
+    border-left: 0.3rem solid;
+}
+
+.output .col-12{
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+#outputHeading{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.outputCol{
+    font-size: .95rem;
+    padding: 0;
+}
+
+.outputChoice{
+    text-align: center;
+}
+
+.outputCol .unit{
+    font-size: .65rem;
+    font-weight: 700;
+    opacity: 60%;
+}
+
+.outputR{
+    border-color: #00c46a;  
+}
+
+.outputC{
+    border-color: #ffb545;  
+}
+
+.downArrow,.downArrow:focus,.upArrow,.upArrow:focus{
+    font-size: 4vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    right: 1rem;
+    top: 50%;
+    margin-right: 0.2rem;
+    outline: none;
+    border: none;
+    background-color: #00c46a;
+    color: #2d3439;
+    padding: 0 0.2vh;
+}
+
+.upArrow,.upArrow:focus{
+    padding: 0 .9vh;
+    font-weight: bold;
+}
+
+.sBtn{
+    text-align: center;
+}
+.sBtn button,.sBtn button:focus{
+    outline: none;
+    border: none;
+    border-radius: .5rem ;
+    font-size: .5rem;
+    padding: .5vh 1vh;
+    color: white;
+    background-color: #00c46a;
+    width: 20%;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"MEDIA QUERIES"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+/* >>>>>>>>>>>>>>>>>>>> Medium and Small Devices */
+@media(min-width:576px) and (max-width:992px) {
+    html, body {
+        overflow-x: hidden;
+      }
+    body{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    } 
+#mapBox{
+    height: 80vh;
+}
+
+.input{
+    width: 50% !important;
+}
+
+.logo{
+    margin-bottom: 2rem;
+}
+
+.col-lg-5{
+    padding-right: 0;
+}
+form,.output{
+    margin: 2vh 7vh;
+}
+
+.copyRight{
+    padding-top: 1rem;
+}
+.downArrow,.downArrow:focus,.upArrow,.upArrow:focus{
+    opacity: 100%;
+    z-index: 1000;
+    padding: 0vh .75vh;
+    font-size: 2rem;
+}
+.upArrow,.upArrow:focus{
+    padding: 0 1.5vh;
+}
+.sBtn button,.sBtn button:focus{
+    opacity: 100%;
+    z-index: 1000;
+    position: relative;
+}
+
+}
+
+/* >>>>>>>>>>>>>>>>>>>> Rare Small Devices */
+@media(min-width:476px) and (max-width:576px){
+    
+    html, body {
+        overflow-x: hidden;
+      }
+    body{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    }
+    .col-lg-5{
+        padding-right: 0;
+    }
+    .copyRight{
+        padding-top: 1rem;
+    }
+    #mapBox{
+        height: 80vh;
+    }
+
+    
+.downArrow,.downArrow:focus,.upArrow,.upArrow:focus{
+    opacity: 100%;
+    z-index: 1000;
+    font-size: 2rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+    font-size: .7rem;
+    width: 8rem!important;
+}
+.sBtn button,.sBtn button:focus{
+    opacity: 100%;
+    z-index: 1000;
+    position: relative;
+}
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>> Common Small Devices */
+@media(max-width:476px){
+    html, body {
+        overflow-x: hidden;
+      }
+    body{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    }    
+    .formBox{
+        padding-bottom: 0;
+    }
+    #mapBox{
+        height: 90vh;
+    }
+    
+    /* .input{
+        width: 50% !important;
+    }
+     */
+    .logo{
+        text-align: left;
+    }
+
+    #outputHeading{
+        font-size: 0.9rem;
+    }
+    
+    .outputCol{
+        font-size: .7rem;
+    }
+
+    .outputCol .unit{
+        font-size: .4rem ;
+    }
+    
+    .col-lg-5{
+        padding-right: 0;
+    }
+    form,.output{
+        margin: 2vh 4vh 2vh 1vh;
+    }
+    
+    .copyRight{
+        padding-top: 2vh;
+        padding-right: 2vh;
+        font-size: .8rem;
+    }
+ 
+    form .row{
+        padding: .5rem 1rem ;
+    }
+    
+    form label{
+        font-size: .7rem;
+        font-weight: 700;
+    }
+    form .input,form .input:focus{
+   width: 50%;
+   font-size: .67rem;
+    }
+    .downArrow,.downArrow:focus,.upArrow,.upArrow:focus{
+        opacity: 100%;
+        z-index: 1000;
+        font-size: 1.5rem;
+    }
+    .leaflet-popup .leaflet-popup-content {
+        font-size: .7rem;
+        width: 8rem!important;
+    }
+    .sBtn button,.sBtn button:focus{
+        opacity: 100%;
+        z-index: 1000;
+        position: relative;
+    }
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- TODO: ------------------- Required meta tags ------------------>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--TODO:----- Google Fonts(Optional) Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <!--TODO:----- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--TODO:----- Material Design Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
+
+    <!--TODO:------------- API  -------------->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <!--TODO:------------- Custom Personalize css  -------------->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--TODO:------------- Custom Personalize js  -------------->
+    <script defer src="js/script.js"></script>
+
+    <!--TODO:-------------- Animation.css links(Please Include anim folder)  -------------->
+    <!-- <link rel="stylesheet" href="anim/css/libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> -->
+
+    <title>mapty // Map your workout</title>
+    <!--TODO:------ Adding icon of Max size of (100 X 100) in Tab bar -->
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+
+
+    <!---------------------------- Container ---------------------------->
+    <div class="container-fluid">
+        <div class="row mainRow">
+            <div class="col-lg-5">
+                <div class=" formBox">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="NA">
+                    </div>
+                    <ul id="formList">
+                        <form class="hidden">
+                            <div class="row">
+                                <div class="col-6 ">
+                                    <label>Type</label>
+                                    <select class="input">
+                                        <option value="running">Running</option>
+                                        <option value="cycling">Cycling</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label>Distance</label>
+                                    <input type="text" class="input distance" placeholder="km">
+                                </div>
+                                <div class="col-6 ">
+                                    <label>Duration</label>
+                                    <input type="text" class="input duration" placeholder="min">
+                                </div>
+                                <div class="col-6 choice">
+                                    <label>Cadence</label>
+                                    <input type="text" class="input cadence" placeholder="step/min">
+                                </div>
+                                <div class="col-6 choice hidden">
+                                    <label>Elev Gain</label>
+                                    <input type="text" class="input elevation" placeholder="meters">
+                                </div>
+                                <div class="col-12 sBtn ">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </ul>
+
+                    <div class="row justify-content-center">
+                        <div class="copyRight">
+                            © Copyright
+                        </div>
+                    </div>
+
+                    <button class="downArrow">&darr;</button>
+                </div>
+
+
+            </div>
+            <div class="col-lg-7" id="mapBox">
+                <button class="upArrow">&uarr;</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--TODO:----- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--TODO:----- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!--TODO:----- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--TODO:----- MDB core JavaScript -->
+    <!-- <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
+    <!--TODO:------------ Font awesome icons link  -------------->
+    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+    <!--TODO:---------- Wow.js link and then script for scrolling animation  -------------->
+    <!-- <script src="anim/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script> -->
+</body>
+
+</html>
